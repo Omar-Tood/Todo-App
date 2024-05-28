@@ -1,9 +1,13 @@
+import { getData } from "@/actions/todoActions";
+import Todo from "@/components/Todo";
+import Todos from "@/components/Todos";
 import Image from "next/image";
 
-export default function Home() {
+export  default async  function  Home() {
+  const data = await getData();
   return (
     <main className="flex   items-center justify-between">
-     <h1>Welcome to Drizzle ORM </h1>
+     <Todos todos={data}/>
     </main>
   );
 
