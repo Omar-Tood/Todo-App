@@ -1,3 +1,4 @@
+import { serial } from "drizzle-orm/mysql-core";
 import { integer, text, boolean, pgTable } from "drizzle-orm/pg-core";
 
 export const todo = pgTable("todo", {
@@ -5,3 +6,4 @@ export const todo = pgTable("todo", {
   text: text("text").notNull(),
   done: boolean("done").default(false).notNull(),
 });
+
