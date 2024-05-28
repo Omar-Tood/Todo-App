@@ -1,6 +1,3 @@
-Sure, here is an awesome README file for your todos application project:
-
----
 
 # 📝 Todos Application
 
@@ -12,6 +9,7 @@ Welcome to the Todos Application! This project is a simple yet powerful to-do li
 ## 🚀 Tech Stack
 
 - **Frontend:** [Next.js 14](https://nextjs.org/)
+- **TypeScript** [TypeScript](https://www.typescriptlang.org/)
 - **ORM:** [Drizzle ORM](https://github.com/drizzle-team/drizzle-orm)
 - **Authentication:** [ClerkAuth](https://clerk.dev/)
 - **Database:** [Neon Postgres](https://neon.tech/)
@@ -39,7 +37,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. **Clone the repo:**
 
     ```sh
-    git clone https://github.com/omar-tood/todos-application.git
+    git clone https://github.com/omar-tood/Todo-App.git
     cd todos-application
     ```
 
@@ -100,7 +98,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 📧 Contact
 
 - **Your Name:** [omarjibrilabdulkhadir@gmail.com](mailto:your-email@example.com)
-- **Project Link:** [https://github.com/Omar-tood/todos-application](https://github.com/yourusername/todos-application)
+- **Project Link:** [https://github.com/Omar-tood/todos-application](https://github.com/Omar-Tood/Todo-App)
 
 ---
 
