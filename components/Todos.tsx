@@ -29,11 +29,11 @@ const Todos: FC<Props> = ({ todos }) => {
   };
 
   // Function to toggle the "done" status of a todo item
-  const toggleIsTodoDone = (id: number) => {
+  const toggleIsTodoDone = (id: number, done: boolean) => {
     setTodoItems((prev) =>
       prev.map((todo) => (todo.id === id ? { ...todo, done: !todo.done } : todo))
     );
-    toggleTodo(id);
+    toggleTodo(id,done);
   };
 
   // Function to delete a todo item
