@@ -3,15 +3,15 @@ import {eq} from "drizzle-orm";
 import {revalidatePath} from "next/cache";
 
 import db from "@/db/drizzle";
-import {todo} from "@/db/schema";
+import {todos} from "@/db/schema";
 
 export const getData = async () => {
-  const data = await db.select().from(todo);
+  const data = await db.select().from(todos);
   return data;
 };
 
 export const addTodo = async (id: number , text: string) => {
-  await db.insert(todo).values({
+  await db.insert(todos).values({
     id,
     text: text,
   });
@@ -19,14 +19,14 @@ export const addTodo = async (id: number , text: string) => {
 };
 
 export const deleteTodo = async (id: number) => {
-  await db.delete(todo).where(eq(todo.id, id));
+  await db.delete(todos).where(eq(todos.id, id));
 
   revalidatePath("/");
 };
 
 export const toggleTodo = async (id: number, done: boolean) => {
   await db
-    .update(todo)
+    .update(todos)
     .set({
       done: done,
     })
