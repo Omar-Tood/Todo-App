@@ -1,6 +1,7 @@
 "use client";
 import { ChangeEvent, FC, useState } from "react";
 import { todoType } from "@/types/todoType";
+import toast, { Toaster } from "react-hot-toast";
 
 interface Props {
   todo: todoType;
@@ -56,6 +57,7 @@ const Todo: FC<Props> = ({
   const handleDelete = () => {
     if (confirm("Are you sure you want to delete this todo?")) {
       deleteTodoItem(todo.id);
+      toast.success("'Todo item deleted successfully!")
     }
   };
 
@@ -108,6 +110,7 @@ const Todo: FC<Props> = ({
             onClick={handleDelete}
             className="bg-red-400 w-16 text-red-50 rounded px-2 py-1"
           >
+            <Toaster position={"top-right"}  reverseOrder = {false}/>
             Delete
           </button>
         )}
