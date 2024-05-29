@@ -3,7 +3,7 @@
 
 Welcome to the Todos Application! This project is a simple yet powerful to-do list application built with modern web technologies. It aims to help you manage your tasks efficiently and effectively.
 
-![Todos Application Screenshot](./public/Screenshot%202024-05-29%20001456.png)
+![Todos Application Screenshot](./public/Screenshot%202024-05-29%20233325.png)
 
 
 ## 🚀 Tech Stack
@@ -100,5 +100,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 - **Your Name:** [omarjibrilabdulkhadir@gmail.com](mailto:your-email@example.com)
 - **Project Link:** [https://github.com/Omar-tood/todos-application](https://github.com/Omar-Tood/Todo-App)
 
----
 

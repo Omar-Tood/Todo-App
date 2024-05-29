@@ -32,7 +32,7 @@ const AddTodo: FC<Props> = ({ createTodo }) => {
       />
       {/* Button for adding a new todo */}
       <button
-        className="flex items-center justify-center bg-green-600 text-green-50 rounded px-2 h-9 w-14 py-1"
+        className="flex items-center justify-center bg-pink-600 text-green-50 rounded px-2 h-15 w-15 py-1"
         onClick={handleAdd}
       >
         Add
