@@ -10,10 +10,11 @@ export const getData = async () => {
   return data;
 };
 
-export const addTodo = async (id: number , text: string) => {
+export const addTodo = async (id: number , text: string, userId: number) => {
   await db.insert(todos).values({
-    id: id,
+    id,
     text: text,
+    userId, 
   });
   revalidatePath("/");
 };
@@ -30,18 +31,18 @@ export const toggleTodo = async (id: number, done: boolean) => {
     .set({
       done: done,
     })
-    .where(eq(todo.id, id));
+    .where(eq(todos.id, id));
 
   revalidatePath("/");
 };
 
 export const editTodo = async (id: number, text: string) => {
   await db
-    .update(todo)
+    .update(todos)
     .set({
       text: text,
     })
-    .where(eq(todo.id, id));
+    .where(eq(todos.id, id));
 
   revalidatePath("/");
 };
