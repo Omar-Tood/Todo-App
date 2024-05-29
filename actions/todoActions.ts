@@ -12,7 +12,7 @@ export const getData = async () => {
 
 export const addTodo = async (id: number , text: string) => {
   await db.insert(todos).values({
-    id,
+    id: id,
     text: text,
   });
   revalidatePath("/");
