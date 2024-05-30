@@ -5,8 +5,9 @@ import {revalidatePath} from "next/cache";
 import db from "@/db/drizzle";
 import {todos} from "@/db/schema";
 
-export const getData = async () => {
-  const data = await db.select().from(todos);
+export const getData = async (userId: number) => {
+  // const data = await db.select().from(todos);
+  const data  = await db.select().from(todos).where(eq(todos?.userId, userId))
   return data;
 };
 
