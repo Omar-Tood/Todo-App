@@ -97,7 +97,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📧 Contact
 
-- **Your Name:** [omarjibrilabdulkhadir@gmail.com](mailto:your-email@example.com)
+- **Your Name:** [Omar-Tood](omarjibrilabdulkhadir@gmail.com)
 - **Project Link:** [https://github.com/Omar-tood/todos-application](https://github.com/Omar-Tood/Todo-App)
 
 
