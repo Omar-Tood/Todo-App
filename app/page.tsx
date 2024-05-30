@@ -7,7 +7,7 @@ export  default async  function  Home() {
   const data = await getData();
   return (
     <main className="flex   items-center justify-between">
-     <Todos todos={data}/>
+     <Todos todos={data} user={1}/>
     </main>
   );
 
