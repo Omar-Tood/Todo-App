@@ -5,11 +5,12 @@ import Todos from "@/components/Todos";
 import Image from "next/image";
 
 export  default async  function  Home() {
-  const user =  await getAllUser()
-  const data = await getData();
+  const users =  await getAllUser();
+  console.log(users)
+  // const data = await getData(users[0].id);
   return (
     <main className="flex   items-center justify-between">
-     <Todos todos={data} user={1}/>
+     <Todos todos={[0]} user={users[0]}/>
     </main>
   );
 

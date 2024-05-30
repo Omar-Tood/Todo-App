@@ -5,6 +5,7 @@ import Todo from "./Todo";
 import AddTodo from "./AddTodo";
 import { addTodo, deleteTodo, editTodo, toggleTodo } from "@/actions/todoActions";
 import { users } from "@/db/schema";
+import { addUser } from "@/actions/userActions";
 
 interface Props {
   todos: todoType[];
@@ -17,9 +18,11 @@ const Todos: FC<Props> = ({ todos, user }) => {
 
   // Function to create a new todo item
   const createTodo = (text: string) => {
-    const id = (todoItems.at(-1)?.id || 0) + 1;
-    addTodo(id, text,user?.id);
-    setTodoItems((prev) => [...prev, { id: id, text, done: false, userId: user?.id }]);
+
+    addUser()
+    // const id = (todoItems.at(-1)?.id || 0) + 1;
+    // addTodo(id, text,user?.id);
+    // setTodoItems((prev) => [...prev, { id: id, text, done: false, userId: user?.id }]);
   };
 
   // Function to change the text of a todo item
