@@ -17,6 +17,7 @@ export const getUser = async(userId: number)=>{
            todos: true,
         }
     });
+    return user
 }
 
 export const addUser = async (name: string, email: string) => {
