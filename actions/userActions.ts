@@ -11,7 +11,7 @@ export const getAllUser = async () =>{
 }
 
 export const getUser = async(userId: number)=>{
-    const user = await db.query.users.findMany({
+    const user = await db.query.users.findFirst({
         where:(users, {eq }) => eq(users.id, userId),
         with:{
            todos: true,
